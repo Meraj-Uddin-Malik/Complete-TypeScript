@@ -1,13 +1,39 @@
 //* Practice Set - 1
-let myFullName: string = "Meraj Uddin Malik";
-let age: number = 27;
-let isStudent: boolean = true;
+let myFullName: string = "Meraj Uddin Malik"; // String Type
+let age: number = 27; // Number Type
+let isStudent: boolean = true; // Boolean Type
+let data: any = "Demo Data"; // Any Type , data 120 allowed
+let value: unknown = "Hello"; // Unknown Type
+if (typeof value === "string") { // Type Guard
+  console.log(value.toUpperCase());
+}
+function greeting(): void {
+  console.log("Hello!");
+}
+
+greeting(); // Void Type
+
+let x: null = null; // Null Type
+let y: undefined = undefined; // Undefined Type
+let newPerson: [string, number] = ["Meraj", 22]; // Tuple Type
+console.log(newPerson, x, y);
+
+enum Direction { // Enum Type
+  Up,
+  Down,
+  Left,
+  Right,
+}
+let move: Direction = Direction.Up;
+console.log(Direction);
 
 console.log(
-  `My name is ${myFullName}, I am ${age} years old. Student: ${isStudent}`
+  `My name is ${myFullName}, I am ${age} years old. & i am ${
+    isStudent ? "a student" : "not a student"
+  }. I have a ${data}. `
 );
 
-//* Practice Set - 1
+//* Practice Set - 2
 let city: string = "Karachi";
 let temprature: number = 36.5;
 let isRaining: boolean = true;
@@ -18,7 +44,7 @@ console.log(
   }`
 );
 
-//* Practice Set - 1
+//* Practice Set - 3
 let myFavNum: number = 98;
 let myAge: number = 27;
 let pi: number = 3.14;
