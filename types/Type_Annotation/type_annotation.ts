@@ -31,3 +31,4 @@ let myNegVal : number = -5;
 let computedValue : number = Math.sqrt(16);
 let nanValue : number = NaN;
 console.log(nanValue); // Output: NaN
+

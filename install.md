@@ -23,3 +23,12 @@ This command uses **nodemon** to watch all files with the `.ts` extension in the
 
 **nodemon --watch . --ext ts --exec "ts-node type_annotation.ts"**
 
+
+/** 
+ * Comments Example
+ * Example 1: Simple Addition
+ * TODO:  Example 2: Simple Subtraction
+ * * Example 3: Simple Multiplication
+ * ! Example 4: Simple Division
+ * ? Example 5: Simple Modulus
+ */ 
